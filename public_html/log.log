@@ -1,0 +1,24 @@
+exception 'ErrorException' with message 'Undefined variable: c' in C:\xampp\htdocs\SlimPHP\public_html\index.php:217
+Stack trace:
+#0 C:\xampp\htdocs\SlimPHP\public_html\index.php(217): Slim\Slim::handleErrors(8, 'Undefined varia...', 'C:\xampp\htdocs...', 217, Array)
+#1 [internal function]: {closure}('x')
+#2 C:\xampp\htdocs\SlimPHP\lib\Slim\Route.php(441): call_user_func_array(Object(Closure), Array)
+#3 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1314): Slim\Route->dispatch()
+#4 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#5 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#6 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#7 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#8 C:\xampp\htdocs\SlimPHP\public_html\index.php(382): Slim\Slim->run()
+#9 {main}
+exception 'ErrorException' with message 'Undefined variable: c' in C:\xampp\htdocs\SlimPHP\public_html\index.php:217
+Stack trace:
+#0 C:\xampp\htdocs\SlimPHP\public_html\index.php(217): Slim\Slim::handleErrors(8, 'Undefined varia...', 'C:\xampp\htdocs...', 217, Array)
+#1 [internal function]: {closure}('x')
+#2 C:\xampp\htdocs\SlimPHP\lib\Slim\Route.php(441): call_user_func_array(Object(Closure), Array)
+#3 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1314): Slim\Route->dispatch()
+#4 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#5 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#6 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#7 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#8 C:\xampp\htdocs\SlimPHP\public_html\index.php(382): Slim\Slim->run()
+#9 {main}

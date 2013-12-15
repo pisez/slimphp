@@ -19,7 +19,40 @@ require 'Slim/Slim.php';
  * your Slim application now by passing an associative array
  * of setting names and values into the application constructor.
  */
-$app = new \Slim\Slim();
+
+
+//Configuration von Slim
+require_once 'config.php';
+
+//App Slim
+require_once '../public_html/app/AppSlim.php';
+
+
+
+//Überschreibe Slim mit der eigener Unterklasse
+$app = new \Slim\AppSlim($configs);
+//$app = new \Slim\Slim($configs);
+
+//Aplication Name
+$app->setName('Live Template');
+
+
+//Produktionsmodus
+$app->configureMode('production', function () use ($app) {
+	$app->config(array(
+			'log.enable' => true,
+			'debug' => false
+	));
+});
+
+//Entwichlungsmodus
+$app->configureMode('development', function () use ($app) {
+	$app->config(array(
+			'log.enable' => true,
+			'debug' => true
+	));
+});
+
 
 /**
  * Step 3: Define the Slim application routes
@@ -166,4 +199,145 @@ $app->delete(
  * This method should be called last. This executes the Slim application
  * and returns the HTTP response to the HTTP client.
  */
+
+
+/////////////////////////####################################//////////////////
+
+//Hello World
+$app->get(
+	'/hello/:name', 
+	function($name){
+		echo "Hello world!";
+	}
+);
+
+
+//POST und GET
+$app->map(
+		'/foo/bar',
+		function(){
+			echo 'test';
+		}
+)->via('GET','POST')->name('foo');
+
+//Platzhalter + für /a1/a2/.. array('a1','a2',..);
+$app->get('/vieleparameter/:name+', function ($name) {
+	echo "cc";
+});
+
+// /archive
+// /archive/2010
+// /archive/2010/12
+// /archive/2010/12/05
+$app->get('/archive(/:year(/:month(/:day)))', function ($year = 2010, $month = 12, $day = 05) {
+    echo sprintf('%s-%s-%s', $year, $month, $day);
+});
+
+
+//CONDITIONS -> VALIDIERUNG -------------------
+
+//conditionsm = Bedingungen
+$app->get('/arhiv/:year', function ($year) {
+    echo "You are viewing archives from $year";
+})->conditions(array('year' => '(19|20)\d\d'));
+
+//Condition für firstName definiern
+\Slim\Route::setDefaultConditions(array(
+		'firstName' => '[a-zA-Z]{3,}'
+));
+
+$app->get('/ar/:firstName', function ($fname){
+	echo $fname;
+});
+//-----------------VALIDIERUNG END-------------------
+
+
+//Route Middleware -> CONTROLLER ---------------------
+
+function mv1() {
+	echo "a1";
+}
+
+function mv2() {
+	echo "a2";
+}
+//Functionen aufrufen
+$app->get('/do', 'mv1', 'mv2', function() {
+	echo "mv3";
+});
+
+// Oder
+$do = function (){
+	echo "I do";
+};
+
+$app->get('/dosomething', $do, function(){
+	echo " tut";
+});
+//----------- CONTROLLER END ----------------------
+
+//Halt
+//$app->halt(403, 'You shall not pass!');
+
+//Error
+$app->get('/error', function() use ($app) {
+	$errorData = array('error' => 'Premission Denided');
+	$app->render('errorTemplate.php', $errorData,403);
+});
+
+//Pass Diese Function wird nicht ausgeführt
+$app->get('/hel/Frank', function () use ($app) {
+	echo "You want see this...";
+	$app->pass();
+});
+
+$app->get('/hel/:name', function ($name) use ($app){
+	echo "But you want see this!";
+});
+
+//Resirect
+$app->get('/redirectme', function () use ($app){
+	$app->redirect('/slimphp/new');
+});
+
+$app->get('/new', function(){
+	echo "NEW";
+});
+
+//Stop
+$app->get('/stop', function () use ($app){
+	echo "You will see this.";
+	$app->stop();
+	echo "But not this";
+});
+
+//URL For
+$app->get('/url/:name', function ($name) use ($app) {
+	echo "Hello $name";
+})->name('url');
+//Create URL from Name
+$url = $app->urlFor('url',array('name'=> 'Josh'));
+
+
+//Group -> CONTROLLER------------------------------
+
+$app->group('/api', function() use ($app){
+	$app->group('/library', function () use ($app){
+		
+		$app->get('/book', function(){
+			echo "Book";
+		});
+		
+		$app->get('/boks', function () {
+			echo "Books";
+		});
+	});
+});
+
+//----------------------------------------------------
+
+
+
+
+
 $app->run();

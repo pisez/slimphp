@@ -1,0 +1,48 @@
+exception 'ErrorException' with message 'Undefined variable: mont' in C:\xampp\htdocs\SlimPHP\index.php:234
+Stack trace:
+#0 C:\xampp\htdocs\SlimPHP\index.php(234): Slim\Slim::handleErrors(8, 'Undefined varia...', 'C:\xampp\htdocs...', 234, Array)
+#1 [internal function]: {closure}('a')
+#2 C:\xampp\htdocs\SlimPHP\Slim\Route.php(441): call_user_func_array(Object(Closure), Array)
+#3 C:\xampp\htdocs\SlimPHP\Slim\Slim.php(1314): Slim\Route->dispatch()
+#4 C:\xampp\htdocs\SlimPHP\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#5 C:\xampp\htdocs\SlimPHP\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#6 C:\xampp\htdocs\SlimPHP\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#7 C:\xampp\htdocs\SlimPHP\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#8 C:\xampp\htdocs\SlimPHP\index.php(237): Slim\Slim->run()
+#9 {main}
+exception 'ErrorException' with message 'preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Compilation failed: missing ) at offset 30' in C:\xampp\htdocs\SlimPHP\Slim\Route.php:366
+Stack trace:
+#0 [internal function]: Slim\Slim::handleErrors(2, 'preg_match() [<...', 'C:\xampp\htdocs...', 366, Array)
+#1 C:\xampp\htdocs\SlimPHP\Slim\Route.php(366): preg_match('#^/arcive/(?P<y...', '/archive', NULL)
+#2 C:\xampp\htdocs\SlimPHP\Slim\Router.php(113): Slim\Route->matches('/archive')
+#3 C:\xampp\htdocs\SlimPHP\Slim\Slim.php(1310): Slim\Router->getMatchedRoutes('GET', '/archive')
+#4 C:\xampp\htdocs\SlimPHP\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#5 C:\xampp\htdocs\SlimPHP\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#6 C:\xampp\htdocs\SlimPHP\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#7 C:\xampp\htdocs\SlimPHP\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#8 C:\xampp\htdocs\SlimPHP\index.php(245): Slim\Slim->run()
+#9 {main}
+exception 'ErrorException' with message 'Undefined variable: errorDate' in C:\xampp\htdocs\SlimPHP\index.php:285
+Stack trace:
+#0 C:\xampp\htdocs\SlimPHP\index.php(285): Slim\Slim::handleErrors(8, 'Undefined varia...', 'C:\xampp\htdocs...', 285, Array)
+#1 [internal function]: {closure}()
+#2 C:\xampp\htdocs\SlimPHP\Slim\Route.php(441): call_user_func_array(Object(Closure), Array)
+#3 C:\xampp\htdocs\SlimPHP\Slim\Slim.php(1314): Slim\Route->dispatch()
+#4 C:\xampp\htdocs\SlimPHP\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#5 C:\xampp\htdocs\SlimPHP\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#6 C:\xampp\htdocs\SlimPHP\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#7 C:\xampp\htdocs\SlimPHP\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#8 C:\xampp\htdocs\SlimPHP\index.php(289): Slim\Slim->run()
+#9 {main}
+exception 'ErrorException' with message 'Missing argument 1 for {closure}()' in C:\xampp\htdocs\SlimPHP\index.php:289
+Stack trace:
+#0 C:\xampp\htdocs\SlimPHP\index.php(289): Slim\Slim::handleErrors(2, 'Missing argumen...', 'C:\xampp\htdocs...', 289, Array)
+#1 [internal function]: {closure}()
+#2 C:\xampp\htdocs\SlimPHP\Slim\Route.php(441): call_user_func_array(Object(Closure), Array)
+#3 C:\xampp\htdocs\SlimPHP\Slim\Slim.php(1314): Slim\Route->dispatch()
+#4 C:\xampp\htdocs\SlimPHP\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#5 C:\xampp\htdocs\SlimPHP\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#6 C:\xampp\htdocs\SlimPHP\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#7 C:\xampp\htdocs\SlimPHP\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#8 C:\xampp\htdocs\SlimPHP\index.php(302): Slim\Slim->run()
+#9 {main}
