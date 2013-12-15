@@ -22,3 +22,93 @@ Stack trace:
 #7 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
 #8 C:\xampp\htdocs\SlimPHP\public_html\index.php(382): Slim\Slim->run()
 #9 {main}
+exception 'RuntimeException' with message 'View cannot render `content\view` because the template does not exist' in C:\xampp\htdocs\SlimPHP\lib\Slim\View.php:272
+Stack trace:
+#0 C:\xampp\htdocs\SlimPHP\lib\Slim\View.php(255): Slim\View->render('content\view', NULL)
+#1 C:\xampp\htdocs\SlimPHP\lib\Slim\View.php(243): Slim\View->fetch('content\view', NULL)
+#2 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(751): Slim\View->display('content\view')
+#3 C:\xampp\htdocs\SlimPHP\public_html\app\conf\routing.php(9): Slim\Slim->render('content\view')
+#4 [internal function]: {closure}()
+#5 C:\xampp\htdocs\SlimPHP\lib\Slim\Route.php(441): call_user_func_array(Object(Closure), Array)
+#6 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1314): Slim\Route->dispatch()
+#7 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#8 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#9 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\SlimPHP\public_html\index.php(69): Slim\Slim->run()
+#12 {main}
+exception 'RuntimeException' with message 'View cannot render `content\view` because the template does not exist' in C:\xampp\htdocs\SlimPHP\lib\Slim\View.php:272
+Stack trace:
+#0 C:\xampp\htdocs\SlimPHP\lib\Slim\View.php(255): Slim\View->render('content\view', NULL)
+#1 C:\xampp\htdocs\SlimPHP\lib\Slim\View.php(243): Slim\View->fetch('content\view', NULL)
+#2 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(751): Slim\View->display('content\view')
+#3 C:\xampp\htdocs\SlimPHP\public_html\app\conf\routing.php(9): Slim\Slim->render('content\view')
+#4 [internal function]: {closure}()
+#5 C:\xampp\htdocs\SlimPHP\lib\Slim\Route.php(441): call_user_func_array(Object(Closure), Array)
+#6 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1314): Slim\Route->dispatch()
+#7 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#8 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#9 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\SlimPHP\public_html\index.php(69): Slim\Slim->run()
+#12 {main}
+exception 'RuntimeException' with message 'View cannot render `content\view` because the template does not exist' in C:\xampp\htdocs\SlimPHP\lib\Slim\View.php:272
+Stack trace:
+#0 C:\xampp\htdocs\SlimPHP\lib\Slim\View.php(255): Slim\View->render('content\view', NULL)
+#1 C:\xampp\htdocs\SlimPHP\lib\Slim\View.php(243): Slim\View->fetch('content\view', NULL)
+#2 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(751): Slim\View->display('content\view')
+#3 C:\xampp\htdocs\SlimPHP\public_html\app\conf\routing.php(9): Slim\Slim->render('content\view')
+#4 [internal function]: {closure}()
+#5 C:\xampp\htdocs\SlimPHP\lib\Slim\Route.php(441): call_user_func_array(Object(Closure), Array)
+#6 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1314): Slim\Route->dispatch()
+#7 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#8 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#9 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\SlimPHP\public_html\index.php(69): Slim\Slim->run()
+#12 {main}
+exception 'RuntimeException' with message 'View cannot render `errorTemplate.php` because the template does not exist' in C:\xampp\htdocs\SlimPHP\lib\Slim\View.php:272
+Stack trace:
+#0 C:\xampp\htdocs\SlimPHP\lib\Slim\View.php(255): Slim\View->render('errorTemplate.p...', NULL)
+#1 C:\xampp\htdocs\SlimPHP\lib\Slim\View.php(243): Slim\View->fetch('errorTemplate.p...', NULL)
+#2 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(751): Slim\View->display('errorTemplate.p...')
+#3 C:\xampp\htdocs\SlimPHP\public_html\app\conf\routing.php(9): Slim\Slim->render('errorTemplate.p...')
+#4 [internal function]: {closure}()
+#5 C:\xampp\htdocs\SlimPHP\lib\Slim\Route.php(441): call_user_func_array(Object(Closure), Array)
+#6 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1314): Slim\Route->dispatch()
+#7 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#8 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#9 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\SlimPHP\public_html\index.php(69): Slim\Slim->run()
+#12 {main}
+exception 'RuntimeException' with message 'View cannot render `errorTemplate.php` because the template does not exist' in C:\xampp\htdocs\SlimPHP\lib\Slim\View.php:272
+Stack trace:
+#0 C:\xampp\htdocs\SlimPHP\lib\Slim\View.php(255): Slim\View->render('errorTemplate.p...', NULL)
+#1 C:\xampp\htdocs\SlimPHP\lib\Slim\View.php(243): Slim\View->fetch('errorTemplate.p...', NULL)
+#2 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(751): Slim\View->display('errorTemplate.p...')
+#3 C:\xampp\htdocs\SlimPHP\public_html\app\conf\routing.php(9): Slim\Slim->render('errorTemplate.p...')
+#4 [internal function]: {closure}()
+#5 C:\xampp\htdocs\SlimPHP\lib\Slim\Route.php(441): call_user_func_array(Object(Closure), Array)
+#6 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1314): Slim\Route->dispatch()
+#7 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#8 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#9 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\SlimPHP\public_html\index.php(69): Slim\Slim->run()
+#12 {main}
+exception 'RuntimeException' with message 'View cannot render `view\content\view.php` because the template does not exist' in C:\xampp\htdocs\SlimPHP\lib\Slim\View.php:272
+Stack trace:
+#0 C:\xampp\htdocs\SlimPHP\lib\Slim\View.php(255): Slim\View->render('view\content\vi...', NULL)
+#1 C:\xampp\htdocs\SlimPHP\lib\Slim\View.php(243): Slim\View->fetch('view\content\vi...', NULL)
+#2 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(751): Slim\View->display('view\content\vi...')
+#3 C:\xampp\htdocs\SlimPHP\public_html\app\conf\routing.php(9): Slim\Slim->render('view\content\vi...')
+#4 [internal function]: {closure}()
+#5 C:\xampp\htdocs\SlimPHP\lib\Slim\Route.php(441): call_user_func_array(Object(Closure), Array)
+#6 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1314): Slim\Route->dispatch()
+#7 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#8 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#9 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#10 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#11 C:\xampp\htdocs\SlimPHP\public_html\index.php(69): Slim\Slim->run()
+#12 {main}

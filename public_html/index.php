@@ -35,18 +35,12 @@ $app = new \App\AppSlim($configs);
 //Aplication Name
 $app->setName('Live Template');
 
-//Routing
-require_once '/app/conf/routing.php';
-
 //Autoloader
 require_once '/app/core/loader.php';
+new \App\Core\Loader();
 
-$a = new \App\Core\Loader();
-
-
-$x = new \App\Controller\Content();
-
-$x->actionView();
+//Routing
+require_once '/app/conf/routing.php';
 
 //Produktionsmodus
 $app->configureMode('production', function () use ($app) {

@@ -3,8 +3,14 @@ namespace App\Controller;
 
 class Content {
 	
-	function actionView(){
-		echo "actionView";
+	private $app = null;
+	
+	public function __construct($app){
+		$this->app = $app;		
+	}
+	
+	function actionView(){			
+		$this->app->render('content'.DS.'view.php');
 	}
 
 	function actionList(){

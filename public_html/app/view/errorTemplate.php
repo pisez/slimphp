@@ -1,3 +1,3 @@
 <?php
 
-echo "error";
+echo "<br />error";

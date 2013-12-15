@@ -2,8 +2,6 @@
 
 namespace App;
 
-//require '/../Slim/Slim.php';
-
 class AppSlim extends \Slim\Slim {
 	
 	function _constuct($param){
@@ -15,4 +13,9 @@ class AppSlim extends \Slim\Slim {
 		print_r($print);
 		echo("</pre>");
 	}
+	
+	public function getObj($obj){
+		return $obj;
+	}
+	
 }

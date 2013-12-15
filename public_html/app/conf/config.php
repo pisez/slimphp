@@ -13,7 +13,7 @@ $configs = array(
 	'log.enabled' => true,
 		
 	//Template Path	
-	'templates.path' => './app/view',
+	'templates.path' => VIEW_PATH,
 		
 	//HTTP Veersion	
 	'http.version' => '1.1',
@@ -22,6 +22,8 @@ $configs = array(
 	'view' => new \Slim\View(),
 		
 	//Mode
-	'mode' => 'development'
+	'mode' => 'development',
+
+		
 );
 

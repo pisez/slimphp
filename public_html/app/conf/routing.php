@@ -1,14 +1,15 @@
 <?php
+
 //Content
 $app->group('/content', function() use ($app){
 	
 	//View
 	$app->get('/view', function() use ($app){
-		echo "view";
+		$app->getObj(new \App\Controller\Content($app))->actionView();		
 	});
 	
 	//List
 	$app->get('/list', function() use ($app){
-		echo "list";
+		$app->getObj(new \App\Controller\Content($app))->actionList();
 	});
 });
