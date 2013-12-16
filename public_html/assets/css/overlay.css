@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+
+.overlay_container{
+	top:0px;
+	left:0px;
+}
+
+.draggable{
+	top:40px;
+	left:30px;
+	
+	position:absolute;
+	width:300px;
+	height:300px;
+}
+
+.overlay_container, .overlay_container img{
+	width: 800px;
+	height:600px;
+}
+
+.overlay_top {
+	position:absolute;
+	background-color: #FFFFFF;
+    opacity: 0.5;
+	border-bottom:1px solid #000000;
+}
+
+.overlay_left {
+	position:absolute;
+	background-color: #FFFFFF;
+    opacity: 0.5;
+	border-right:1px solid #000000;
+}
+
+.overlay_right {
+	position:absolute;
+	background-color: #FFFFFF;
+    opacity: 0.5;
+	border-left:1px solid #000000;
+}
+
+.overlay_bottom {
+	position:absolute;
+	background-color: #FFFFFF;
+    opacity: 0.5;
+	border-top:1px solid #000000;
+}

@@ -15,5 +15,9 @@ class Content {
 
 	function actionList(){
 		echo "actionList";
-	}	
+	}
+
+	function actionEdit(){
+		$this->app->render('content'.DS.'edit.php');
+	}
 }
