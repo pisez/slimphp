@@ -1,22 +1,25 @@
 @CHARSET "UTF-8";
 
-.overlay_container{
-	top:0px;
-	left:0px;
-}
 
 .draggable{
-	top:40px;
-	left:30px;
-	
-	position:absolute;
+	top:50px;
+	left:50px;	
 	width:300px;
 	height:300px;
+	position:absolute;
 }
 
-.overlay_container, .overlay_container img{
-	width: 800px;
-	height:600px;
+.overlay_container,.overlay_container img{
+	width: 700px;
+	height:500px;	
+}
+
+.overlay_container{
+	top:300px;
+	left:100px;	
+	
+	background-color:black;
+	position:absolute;
 }
 
 .overlay_top {
@@ -45,4 +48,11 @@
 	background-color: #FFFFFF;
     opacity: 0.5;
 	border-top:1px solid #000000;
+}
+
+.ui-icon, .ui-widget-content .ui-icon{
+	background-image:none;
+	background-color:#FFFFFF;
+	opacity: 0.5;
+	border:1px solid #000;
 }

@@ -28,8 +28,8 @@
 	
 
 $(function(){	
-	$("#changeable_boox").draggable();
-	$("#changeable_boox").resizable();
+	$("#changeable_boox").draggable({ containment: "parent" });
+	$("#changeable_boox").resizable({ containment: "parent" });
 	$("#drag_parent").overlaysResizer({resizer_id:"changeable_boox"});		
 });
 
