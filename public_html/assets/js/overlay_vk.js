@@ -7,12 +7,19 @@
 	}
 	
 	a.fn.overlaysResizer = function(options){
+	
 		var settings = a.extend({},a.overlay.defaults, options);
+		//Container, wo alle Elemente enthalten sind.
 		var overlay_container = a(this);
+		
 		var resizer = overlay_container.find("#"+settings.resizer_id);
+		//Positionierung und Größe
 		var container_data = getData(overlay_container);
 		var resizer_data = getData(resizer);	
 		
+		/**
+		 * Position und Größe
+		 */
 		function getData(elem){			
 			var obj = {
 					width: parseInt(elem.width()),
@@ -24,7 +31,7 @@
 		}
 		
 		/**
-		 * Erzeugt 4 Overlays
+		 * Erzeugt 4 Overlays (Oben, Unten, Rechts, Links)
 		 */
 		function createOverlays(oc,c,r){		
 
@@ -37,7 +44,7 @@
 		}
 		
 		/**
-		 * Event reagiert aug Gröseänderung  
+		 * Event reagiert aug Größenänderung  
 		 */
 		function setResizeEvent(res,cont,ol,or,ob){
 						
@@ -60,6 +67,9 @@
 			});
 		}		
 		
+		/**
+		 * Event reagiert auf Bewegung 
+		 */
 		function setDragEvent(res,cont,ot,ol,or,ob){
 			res.bind('drag',function(){
 				
@@ -82,9 +92,9 @@
 				ob.css('top',bt+"px").css('height',(ch-bt)+"px");				
 			});
 		}		
-						
+		//Init Overlays
 		createOverlays(overlay_container,container_data,resizer_data);	
-		
+		//Get Overlays
 		var ot = $('#overlay_top');
 		var ol = $('#overlay_left');
 		var or = $('#overlay_right');
@@ -93,7 +103,6 @@
 		setResizeEvent(resizer,overlay_container,ol,or,ob);
 		setDragEvent(resizer,overlay_container,ot,ol,or,ob);			
 	}	
-	
 })(jQuery);
 
 /*

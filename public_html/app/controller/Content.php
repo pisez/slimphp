@@ -1,13 +1,8 @@
 <?php
 namespace App\Controller;
+use \App\Core\Controller;
 
-class Content {
-	
-	private $app = null;
-	
-	public function __construct($app){
-		$this->app = $app;		
-	}
+class Content extends Controller {
 	
 	function actionView(){			
 		$this->app->render('content'.DS.'view.php');

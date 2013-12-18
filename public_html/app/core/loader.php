@@ -5,17 +5,35 @@ namespace App\Core;
 class Loader{
 
 	private $namespace;	
-
+	//Controller App Pfad
 	private $_controllerDirectoryPath = '';		
+	//Core App Pfad
+	private $_coreDirectoryPath = '';
+	
+	//Core Files
+	private $_coreFiles = array(
+			'controller' =>'Controller.php'
+			);
+	
+	
 	
 	public function __construct(){		
-		//Setze den Controller-Path
+		//Setze Pfade
 		$this->_controllerDirectoryPath = CONTROLLER_PATH;
+		$this->_coreDirectoryPath = CORE_PATH;	
 		
-		spl_autoload_register(array($this, 'loadController'));				
+		//Registriere Controller Loader
+		spl_autoload_register(array($this, 'loadController'));
+		//Lade Core Dateien
+		$this->loadCoreElements();
+		//spl_autoload_register(array($this, 'loadCoreElements'));
 	}
 	
-	
+	/**
+	 * Lade Controller
+	 * 
+	 * @param string $className
+	 */
 	public function loadController($className){
 		
 		$className = explode('\\', $className);	
@@ -29,6 +47,20 @@ class Loader{
 		}
 	}	
 
+	/**
+	 * Lade Core Elements
+	 */
+	public function loadCoreElements(){
+		//
+		foreach($this->_coreFiles as $file){
+			$file = $this->_coreDirectoryPath.$file;
+			//Lade Core Files
+			if(file_exists($file)){				
+				require_once $file;
+			}
+		}
+	}
+	
 	/*
 	//Setze Namespace
 	public function __construct($namespace = null){

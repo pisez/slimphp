@@ -112,3 +112,120 @@ Stack trace:
 #10 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
 #11 C:\xampp\htdocs\SlimPHP\public_html\index.php(69): Slim\Slim->run()
 #12 {main}
+exception 'ErrorException' with message 'Undefined property: App\Controller\Content::$app' in C:\xampp\htdocs\SlimPHP\public_html\app\controller\Content.php:23
+Stack trace:
+#0 C:\xampp\htdocs\SlimPHP\public_html\app\controller\Content.php(23): Slim\Slim::handleErrors(8, 'Undefined prope...', 'C:\xampp\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\SlimPHP\public_html\app\conf\routing.php(18): App\Controller\Content->actionEdit()
+#2 [internal function]: {closure}()
+#3 C:\xampp\htdocs\SlimPHP\lib\Slim\Route.php(441): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1314): Slim\Route->dispatch()
+#5 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#6 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#9 C:\xampp\htdocs\SlimPHP\public_html\index.php(69): Slim\Slim->run()
+#10 {main}
+exception 'ErrorException' with message 'Undefined property: App\Controller\Content::$app' in C:\xampp\htdocs\SlimPHP\public_html\app\controller\Content.php:22
+Stack trace:
+#0 C:\xampp\htdocs\SlimPHP\public_html\app\controller\Content.php(22): Slim\Slim::handleErrors(8, 'Undefined prope...', 'C:\xampp\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\SlimPHP\public_html\app\conf\routing.php(18): App\Controller\Content->actionEdit()
+#2 [internal function]: {closure}()
+#3 C:\xampp\htdocs\SlimPHP\lib\Slim\Route.php(441): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1314): Slim\Route->dispatch()
+#5 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#6 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#9 C:\xampp\htdocs\SlimPHP\public_html\index.php(69): Slim\Slim->run()
+#10 {main}
+exception 'ErrorException' with message 'Undefined property: App\Controller\Content::$app' in C:\xampp\htdocs\SlimPHP\public_html\app\controller\Content.php:22
+Stack trace:
+#0 C:\xampp\htdocs\SlimPHP\public_html\app\controller\Content.php(22): Slim\Slim::handleErrors(8, 'Undefined prope...', 'C:\xampp\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\SlimPHP\public_html\app\conf\routing.php(18): App\Controller\Content->actionEdit()
+#2 [internal function]: {closure}()
+#3 C:\xampp\htdocs\SlimPHP\lib\Slim\Route.php(441): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1314): Slim\Route->dispatch()
+#5 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#6 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#9 C:\xampp\htdocs\SlimPHP\public_html\index.php(69): Slim\Slim->run()
+#10 {main}
+exception 'ErrorException' with message 'Undefined property: App\Controller\Content::$app' in C:\xampp\htdocs\SlimPHP\public_html\app\controller\Content.php:22
+Stack trace:
+#0 C:\xampp\htdocs\SlimPHP\public_html\app\controller\Content.php(22): Slim\Slim::handleErrors(8, 'Undefined prope...', 'C:\xampp\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\SlimPHP\public_html\app\conf\routing.php(18): App\Controller\Content->actionEdit()
+#2 [internal function]: {closure}()
+#3 C:\xampp\htdocs\SlimPHP\lib\Slim\Route.php(441): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1314): Slim\Route->dispatch()
+#5 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#6 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#9 C:\xampp\htdocs\SlimPHP\public_html\index.php(69): Slim\Slim->run()
+#10 {main}
+exception 'ErrorException' with message 'Undefined property: App\Controller\Content::$app' in C:\xampp\htdocs\SlimPHP\public_html\app\controller\Content.php:22
+Stack trace:
+#0 C:\xampp\htdocs\SlimPHP\public_html\app\controller\Content.php(22): Slim\Slim::handleErrors(8, 'Undefined prope...', 'C:\xampp\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\SlimPHP\public_html\app\conf\routing.php(18): App\Controller\Content->actionEdit()
+#2 [internal function]: {closure}()
+#3 C:\xampp\htdocs\SlimPHP\lib\Slim\Route.php(441): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1314): Slim\Route->dispatch()
+#5 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#6 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#9 C:\xampp\htdocs\SlimPHP\public_html\index.php(69): Slim\Slim->run()
+#10 {main}
+exception 'ErrorException' with message 'Undefined property: App\Controller\Content::$app' in C:\xampp\htdocs\SlimPHP\public_html\app\controller\Content.php:22
+Stack trace:
+#0 C:\xampp\htdocs\SlimPHP\public_html\app\controller\Content.php(22): Slim\Slim::handleErrors(8, 'Undefined prope...', 'C:\xampp\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\SlimPHP\public_html\app\conf\routing.php(18): App\Controller\Content->actionEdit()
+#2 [internal function]: {closure}()
+#3 C:\xampp\htdocs\SlimPHP\lib\Slim\Route.php(441): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1314): Slim\Route->dispatch()
+#5 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#6 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#9 C:\xampp\htdocs\SlimPHP\public_html\index.php(69): Slim\Slim->run()
+#10 {main}
+exception 'ErrorException' with message 'Undefined property: App\Controller\Content::$app' in C:\xampp\htdocs\SlimPHP\public_html\app\controller\Content.php:22
+Stack trace:
+#0 C:\xampp\htdocs\SlimPHP\public_html\app\controller\Content.php(22): Slim\Slim::handleErrors(8, 'Undefined prope...', 'C:\xampp\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\SlimPHP\public_html\app\conf\routing.php(18): App\Controller\Content->actionEdit()
+#2 [internal function]: {closure}()
+#3 C:\xampp\htdocs\SlimPHP\lib\Slim\Route.php(441): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1314): Slim\Route->dispatch()
+#5 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#6 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#9 C:\xampp\htdocs\SlimPHP\public_html\index.php(73): Slim\Slim->run()
+#10 {main}
+exception 'ErrorException' with message 'Undefined property: App\Controller\Content::$app' in C:\xampp\htdocs\SlimPHP\public_html\app\controller\Content.php:22
+Stack trace:
+#0 C:\xampp\htdocs\SlimPHP\public_html\app\controller\Content.php(22): Slim\Slim::handleErrors(8, 'Undefined prope...', 'C:\xampp\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\SlimPHP\public_html\app\conf\routing.php(18): App\Controller\Content->actionEdit()
+#2 [internal function]: {closure}()
+#3 C:\xampp\htdocs\SlimPHP\lib\Slim\Route.php(441): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1314): Slim\Route->dispatch()
+#5 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#6 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#9 C:\xampp\htdocs\SlimPHP\public_html\index.php(73): Slim\Slim->run()
+#10 {main}
+exception 'ErrorException' with message 'Undefined property: App\Controller\Content::$app' in C:\xampp\htdocs\SlimPHP\public_html\app\controller\Content.php:22
+Stack trace:
+#0 C:\xampp\htdocs\SlimPHP\public_html\app\controller\Content.php(22): Slim\Slim::handleErrors(8, 'Undefined prope...', 'C:\xampp\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\SlimPHP\public_html\app\conf\routing.php(18): App\Controller\Content->actionEdit()
+#2 [internal function]: {closure}()
+#3 C:\xampp\htdocs\SlimPHP\lib\Slim\Route.php(441): call_user_func_array(Object(Closure), Array)
+#4 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1314): Slim\Route->dispatch()
+#5 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\Flash.php(85): Slim\Slim->call()
+#6 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 C:\xampp\htdocs\SlimPHP\lib\Slim\Middleware\PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 C:\xampp\htdocs\SlimPHP\lib\Slim\Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#9 C:\xampp\htdocs\SlimPHP\public_html\index.php(69): Slim\Slim->run()
+#10 {main}
